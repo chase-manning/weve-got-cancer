@@ -14,7 +14,7 @@ const StyledButton = styled.a<{ primary?: boolean }>`
   color: var(--bg);
   font-size: 2.4rem;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
