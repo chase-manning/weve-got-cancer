@@ -14,6 +14,17 @@ const StyledButton = styled.a<{ primary?: boolean }>`
   justify-content: center;
   font-weight: bold;
   border-radius: 1.5rem;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 900px) {
+    height: 5.4rem;
+    padding: 0 2.4rem;
+    font-size: 2rem;
+  }
 `;
 
 interface Props {

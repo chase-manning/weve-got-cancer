@@ -1,1 +1,3 @@
 - Index html metadata
+- Move book imge to asset
+- Optimise image for faster load times

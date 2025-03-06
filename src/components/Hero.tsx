@@ -8,6 +8,18 @@ const StyledHero = styled.div`
   height: 100dvh;
   display: flex;
   padding: 10rem;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding: 5rem;
+    gap: 10rem;
+    height: auto;
+  }
+
+  @media (max-width: 900px) {
+    padding: 3rem;
+  }
 `;
 
 const Background = styled.img`
@@ -33,6 +45,10 @@ const Author = styled.h4`
   letter-spacing: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+
+  @media (max-width: 900px) {
+    font-size: 2.4rem;
+  }
 `;
 
 const Header = styled.h1`
@@ -41,6 +57,10 @@ const Header = styled.h1`
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: bold;
+
+  @media (max-width: 900px) {
+    font-size: 4.2rem;
+  }
 `;
 
 const SubHeader = styled.h3`
@@ -49,6 +69,10 @@ const SubHeader = styled.h3`
   font-family: "PT Serif", serif;
   font-weight: normal;
   max-width: 65rem;
+
+  @media (max-width: 900px) {
+    font-size: 2.8rem;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -68,6 +92,11 @@ const Section = styled.div`
 
 const Image = styled.img`
   height: 80dvh;
+
+  @media (max-width: 900px) {
+    height: auto;
+    width: 100%;
+  }
 `;
 
 const Hero = () => {
