@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const Container = styled.div`
+  width: auto;
+  position: relative;
+`;
+
 const StyledButton = styled.a<{ primary?: boolean }>`
   height: 6.1rem;
   padding: 0 3rem;
@@ -36,13 +41,15 @@ interface Props {
 
 const Button = ({ primary, link, children, newTab }: Props) => {
   return (
-    <StyledButton
-      primary={primary}
-      href={link}
-      target={newTab ? "_blank" : "_self"}
-    >
-      {children}
-    </StyledButton>
+    <Container>
+      <StyledButton
+        primary={primary}
+        href={link}
+        target={newTab ? "_blank" : "_self"}
+      >
+        {children}
+      </StyledButton>
+    </Container>
   );
 };
 
