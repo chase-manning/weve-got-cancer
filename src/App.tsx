@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Hero from "./components/Hero";
+import Awards from "./components/Awards";
 
 const StyledApp = styled.div`
   width: 100%;
@@ -8,11 +9,11 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
 const App = () => {
   return (
     <StyledApp>
       <Hero />
+      <Awards />
     </StyledApp>
   );
 };
