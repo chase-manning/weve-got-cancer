@@ -1,9 +1,5 @@
 # Launch
 
-- Learn more button functionality
-- Lien review
-- Index html metadata
-
 # Post Launch
 
 - Move book image to asset
