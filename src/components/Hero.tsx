@@ -73,7 +73,7 @@ const SubHeader = styled.h3`
   max-width: 65rem;
 
   @media (max-width: 900px) {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 `;
