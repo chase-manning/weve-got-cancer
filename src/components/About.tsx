@@ -40,6 +40,7 @@ const Header = styled.h2`
 
   @media (max-width: 900px) {
     font-size: 3.6rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -50,7 +51,7 @@ const Paragraph = styled.p`
   line-height: 1.4;
 
   @media (max-width: 900px) {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 `;
 
@@ -77,7 +78,7 @@ const QuoteContainer = styled.div`
 `;
 
 const BoldQuote = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--primary);
   font-weight: bold;
 
@@ -87,7 +88,7 @@ const BoldQuote = styled.p`
 `;
 
 const Quote = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--primary);
   font-weight: normal;
   font-style: italic;
@@ -105,25 +106,30 @@ const About = () => {
         <Paragraph>
           My partner was suddenly diagnosed with Multiple Myeloma with 80-90
           percent saturation of cancer in his blood - plus a chromosome deletion
-          to top it off. He's now in stringent complete remission. I've told the
-          story from beginning to end. You get it all from diagnosis, medical
-          aspects, detailed description of the treatments he underwent like
-          chemotherapy and stem cell transplant, side effects, and amazing
-          results. There are a few twists and turns, tips that are good to know,
-          and I suppose there's a love story entwined. I seriously hope with all
-          my heart that this book can offer you some comfort, advice, insight,
-          understanding, knowledge and hope within these pages.
+          to top it off. He's now in stringent complete remission.
         </Paragraph>
-        <ButtonContainer>
-          <Button link={AMAZON_LINK} primary newTab>
-            Buy now on Amazon
-          </Button>
-        </ButtonContainer>
+        <Paragraph>
+          I've told the story from beginning to end. You get it all from
+          diagnosis, medical aspects, detailed description of the treatments he
+          underwent like chemotherapy and stem cell transplant, side effects,
+          and amazing results. There are a few twists and turns, tips that are
+          good to know, and I suppose there's a love story entwined.
+        </Paragraph>
+        <Paragraph>
+          I seriously hope with all my heart that this book can offer you some
+          comfort, advice, insight, understanding, knowledge and hope within
+          these pages.
+        </Paragraph>
         <QuoteContainer>
           <BoldQuote>"Kia Kaha. Tena koutou e te whanau."</BoldQuote>
           <Quote>Stay strong. Welcome to our family.</Quote>
           <Quote>(Te reo Maori, Aotearoa, New Zealand)</Quote>
         </QuoteContainer>
+        <ButtonContainer>
+          <Button link={AMAZON_LINK} primary newTab>
+            Buy now on Amazon
+          </Button>
+        </ButtonContainer>
       </TextContent>
     </StyledAbout>
   );

@@ -18,7 +18,7 @@ const StyledHero = styled.div`
   }
 
   @media (max-width: 900px) {
-    padding: 3rem;
+    padding: 5rem 2rem;
   }
 `;
 
@@ -48,6 +48,7 @@ const Author = styled.h4`
 
   @media (max-width: 900px) {
     font-size: 2.4rem;
+    text-align: center;
   }
 `;
 
@@ -60,6 +61,7 @@ const Header = styled.h1`
 
   @media (max-width: 900px) {
     font-size: 4.2rem;
+    text-align: center;
   }
 `;
 
@@ -72,6 +74,7 @@ const SubHeader = styled.h3`
 
   @media (max-width: 900px) {
     font-size: 2.8rem;
+    text-align: center;
   }
 `;
 
@@ -79,6 +82,12 @@ const ButtonContainer = styled.div`
   display: flex;
   gap: 2rem;
   margin-top: 2.6rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
 `;
 
 const Section = styled.div`
@@ -95,7 +104,7 @@ const Image = styled.img`
 
   @media (max-width: 900px) {
     height: auto;
-    width: 100%;
+    width: 90%;
   }
 `;
 

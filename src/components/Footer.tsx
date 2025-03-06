@@ -19,6 +19,11 @@ const FooterContent = styled.div`
   width: 100%;
   max-width: 120rem;
   justify-content: space-between;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 4rem;
+  }
 `;
 
 const Section = styled.div<{ flex?: number }>`
@@ -26,6 +31,10 @@ const Section = styled.div<{ flex?: number }>`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+
+  @media (max-width: 900px) {
+    gap: 0.6rem;
+  }
 `;
 
 const Author = styled.h4`
@@ -37,7 +46,7 @@ const Author = styled.h4`
   font-weight: bold;
 
   @media (max-width: 900px) {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 `;
 
@@ -48,20 +57,24 @@ const FooterHeader = styled.h5`
   margin-bottom: 2rem;
 
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 `;
 
 const FooterLink = styled.a`
   font-size: 2.4rem;
   color: var(--bg);
-  font-family: "PT Serif", serif;
   font-weight: normal;
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1.8rem;
   }
 `;
 

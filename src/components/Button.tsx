@@ -24,6 +24,7 @@ const StyledButton = styled.a<{ primary?: boolean }>`
     height: 5.4rem;
     padding: 0 2.4rem;
     font-size: 2rem;
+    width: 100%;
   }
 `;
 

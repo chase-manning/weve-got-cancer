@@ -38,6 +38,7 @@ const Header = styled.h2`
 
   @media (max-width: 900px) {
     font-size: 3.6rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -48,7 +49,7 @@ const Paragraph = styled.p`
   line-height: 1.4;
 
   @media (max-width: 900px) {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 `;
 
@@ -60,15 +61,19 @@ const Author = () => {
         <Paragraph>
           Kushla was born and bred in New Zealand. In true Kiwi style she has
           travelled the world but always chosen to keep New Zealand as her home.
+        </Paragraph>
+        <Paragraph>
           Living in Auckland, Kushla has a private practice working
           predominantly as a therapist helping her clients through emotional
           distress. She has a love for philosophy and has over the past 25 years
           enjoyed a spiritual path of learning as she navigates her way through
-          life. Her passion's have led her desire to write, to reach further in
-          helping others going through challenging times. Using her own real
-          life experiences and knowledge, she writes in a simple story telling
-          way bringing helpful information, tips, pitfalls, successes and
-          opportunities of hope.
+          life. Her passions have led her desire to write, to reach further in
+          helping others going through challenging times.
+        </Paragraph>
+        <Paragraph>
+          Using her own real life experiences and knowledge, she writes in a
+          simple story telling way bringing helpful information, tips, pitfalls,
+          successes and opportunities of hope.
         </Paragraph>
       </TextContent>
     </StyleAuthor>
