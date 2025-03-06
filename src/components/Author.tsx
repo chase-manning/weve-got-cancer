@@ -19,6 +19,7 @@ const TextContent = styled.div`
   gap: 2.6rem;
   position: relative;
   max-width: 120rem;
+  margin-bottom: 1rem;
 
   @media (max-width: 900px) {
     gap: 2rem;
