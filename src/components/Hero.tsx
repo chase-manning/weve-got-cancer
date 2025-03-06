@@ -101,7 +101,7 @@ const Image = styled.img`
 
 const Hero = () => {
   return (
-    <StyledHero>
+    <StyledHero id="home">
       <Background src={bg} alt="Hero Background Image" />
       <Section>
         <TextArea>

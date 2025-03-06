@@ -30,7 +30,7 @@ const Award = styled.img`
 
 const Awards = () => {
   return (
-    <StyledAwards>
+    <StyledAwards id="awards">
       <Award src={award01} alt="award" />
       <Award src={award02} alt="award" />
       <Award src={award03} alt="award" />

@@ -99,7 +99,7 @@ const Quote = styled.p`
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <TextContent>
         <Header>About the Book</Header>
         <Paragraph>

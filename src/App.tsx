@@ -15,10 +15,10 @@ const StyledApp = styled.div`
 const App = () => {
   return (
     <StyledApp>
-      <Hero id="home" />
-      <Awards id="awards" />
-      <About id="about" />
-      <Author id="author" />
+      <Hero />
+      <Awards />
+      <About />
+      <Author />
       <Footer />
     </StyledApp>
   );

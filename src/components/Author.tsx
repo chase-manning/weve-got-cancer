@@ -54,7 +54,7 @@ const Paragraph = styled.p`
 
 const Author = () => {
   return (
-    <StyleAuthor>
+    <StyleAuthor id="author">
       <TextContent>
         <Header>About the Author</Header>
         <Paragraph>
