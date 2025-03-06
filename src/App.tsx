@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Awards from "./components/Awards";
 import About from "./components/About";
 import Author from "./components/Author";
+import Footer from "./components/Footer";
 
 const StyledApp = styled.div`
   width: 100%;
@@ -18,6 +19,7 @@ const App = () => {
       <Awards />
       <About />
       <Author />
+      <Footer />
     </StyledApp>
   );
 };
