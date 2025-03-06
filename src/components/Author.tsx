@@ -67,13 +67,14 @@ const Author = () => {
           predominantly as a therapist helping her clients through emotional
           distress. She has a love for philosophy and has over the past 25 years
           enjoyed a spiritual path of learning as she navigates her way through
-          life. Her passions have led her desire to write, to reach further in
-          helping others going through challenging times.
+          life.
         </Paragraph>
         <Paragraph>
-          Using her own real life experiences and knowledge, she writes in a
-          simple story telling way bringing helpful information, tips, pitfalls,
-          successes and opportunities of hope.
+          Her passions have led her desire to write, to reach further in helping
+          others going through challenging times. Using her own real life
+          experiences and knowledge, she writes in a simple story telling way
+          bringing helpful information, tips, pitfalls, successes and
+          opportunities of hope.
         </Paragraph>
       </TextContent>
     </StyleAuthor>
