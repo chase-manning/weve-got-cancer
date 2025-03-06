@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Hero from "./components/Hero";
 import Awards from "./components/Awards";
 import About from "./components/About";
+import Author from "./components/Author";
 
 const StyledApp = styled.div`
   width: 100%;
@@ -16,6 +17,7 @@ const App = () => {
       <Hero />
       <Awards />
       <About />
+      <Author />
     </StyledApp>
   );
 };
