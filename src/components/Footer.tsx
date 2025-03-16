@@ -37,6 +37,30 @@ const Section = styled.div<{ flex?: number }>`
   }
 `;
 
+const FineprintSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+`;
+
+const Gap = styled.div`
+  height: 0.4rem;
+`;
+
+const Fineprint = styled.p`
+  font-size: 1.1rem;
+  color: var(--bg);
+  font-weight: normal;
+
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+  }
+`;
+
 const Author = styled.h4`
   font-size: 2.8rem;
   color: var(--bg);
@@ -44,9 +68,11 @@ const Author = styled.h4`
   letter-spacing: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 6rem;
 
   @media (max-width: 900px) {
     font-size: 2rem;
+    margin-bottom: 0;
   }
 `;
 
@@ -84,6 +110,18 @@ const Footer = () => {
       <FooterContent>
         <Section>
           <Author>Kushla Rolls</Author>
+          <FineprintSection>
+            <Fineprint>
+              WE'VE GOT CANCER Copyright © Kushla Rolls, 2020
+            </Fineprint>
+            <Fineprint>
+              First published in 2020 by Modern Mind Limited
+            </Fineprint>
+            <Gap />
+            <Fineprint>ISBN 978-0-473-55040-0 (Ebook)</Fineprint>
+            <Fineprint>ISBN 978-0-473-55076-9 (Paperback)</Fineprint>
+            <Fineprint>ISBN 978-0-473-53599-5 (Kindle)</Fineprint>
+          </FineprintSection>
         </Section>
         <Section>
           <FooterHeader>Links</FooterHeader>
