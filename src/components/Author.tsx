@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import kushla from "../assets/author/kushla.png";
 
 const StyleAuthor = styled.div`
   width: 100%;
@@ -42,6 +43,17 @@ const Header = styled.h2`
   }
 `;
 
+const SectionContainer = styled.div`
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+`;
+
 const Paragraph = styled.p`
   font-size: 2.8rem;
   color: var(--primary);
@@ -50,6 +62,20 @@ const Paragraph = styled.p`
 
   @media (max-width: 900px) {
     font-size: 2rem;
+  }
+`;
+
+const Image = styled.img`
+  height: 18rem;
+  border-radius: 50%;
+
+  @media (max-width: 1200px) {
+    height: 22rem;
+  }
+
+  @media (max-width: 900px) {
+    height: auto;
+    width: 70%;
   }
 `;
 
@@ -62,13 +88,16 @@ const Author = () => {
           Kushla was born and bred in New Zealand. In true Kiwi style she has
           travelled the world but always chosen to keep New Zealand as her home.
         </Paragraph>
-        <Paragraph>
-          Living in Auckland, Kushla has a private practice working
-          predominantly as a therapist helping her clients through emotional
-          distress. She has a love for philosophy and has over the past 25 years
-          enjoyed a spiritual path of learning as she navigates her way through
-          life.
-        </Paragraph>
+        <SectionContainer>
+          <Image src={kushla} alt="Kushla" />
+          <Paragraph>
+            Living in Auckland, Kushla has a private practice working
+            predominantly as a therapist helping her clients through emotional
+            distress. She has a love for philosophy and has over the past 25
+            years enjoyed a spiritual path of learning as she navigates her way
+            through life.
+          </Paragraph>
+        </SectionContainer>
         <Paragraph>
           Her passions have led her desire to write, to reach further in helping
           others going through challenging times. Using her own real life
