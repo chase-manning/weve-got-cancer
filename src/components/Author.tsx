@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import kushla from "../assets/author/kushla.png";
+import kushla from "../assets/author/kushla.jpg";
 
 const StyleAuthor = styled.div`
   width: 100%;
