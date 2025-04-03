@@ -1,11 +1,10 @@
 # Unsorted
 
-- Put on extra sticker
-- Move book image to asset
-- Optimise image for faster load times
-- Add Google Search Console
-- Add Google Optimise
-- Use Amazon Affiliate Link
-- Set up Google Ads
-
 # Sorted
+
+- Optimise image for faster load times
+- Move book image to asset
+- Put on extra sticker
+- Use Amazon Affiliate Link
+- Set up conversion tracking in Google Ads
+- Add Google Optimise
