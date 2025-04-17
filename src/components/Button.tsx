@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 const StyledButton = styled.a<{ primary?: boolean }>`
   height: 6.1rem;
   padding: 0 3rem;
