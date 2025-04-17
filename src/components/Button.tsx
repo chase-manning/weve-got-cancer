@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-declare function gtag_report_conversion(url: string): boolean;
-
 const StyledButton = styled.a<{ primary?: boolean }>`
   height: 6.1rem;
   padding: 0 3rem;
@@ -35,15 +33,18 @@ interface Props {
   link: string;
   newTab?: boolean;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
-const Button = ({ primary, link, children, newTab }: Props) => {
+const Button = ({ primary, link, children, newTab, onClick }: Props) => {
   return (
     <StyledButton
       primary={primary}
       href={link}
       target={newTab ? "_blank" : "_self"}
-      onClick={() => gtag_report_conversion(link)}
+      onClick={() => {
+        if (onClick) onClick();
+      }}
     >
       {children}
     </StyledButton>

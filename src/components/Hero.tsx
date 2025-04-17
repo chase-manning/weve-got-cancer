@@ -2,6 +2,7 @@ import styled from "styled-components";
 import bg from "../assets/hero-bg.png";
 import Button from "./Button";
 import { AMAZON_LINK } from "../app/constants";
+import gtag_report_conversion from "../app/report-conversion";
 
 const StyledHero = styled.div`
   width: 100%;
@@ -126,7 +127,12 @@ const Hero = () => {
           </SubHeader>
           <ButtonContainer>
             <Button link="/#about">Learn more</Button>
-            <Button primary link={AMAZON_LINK} newTab>
+            <Button
+              primary
+              link={AMAZON_LINK}
+              newTab
+              onClick={() => gtag_report_conversion()}
+            >
               Buy on Amazon
             </Button>
           </ButtonContainer>
