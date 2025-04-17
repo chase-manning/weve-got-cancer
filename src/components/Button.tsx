@@ -41,6 +41,7 @@ const Button = ({ primary, link, children, newTab }: Props) => {
       primary={primary}
       href={link}
       target={newTab ? "_blank" : "_self"}
+      onClick={() => gtag_report_conversion(link)}
     >
       {children}
     </StyledButton>
