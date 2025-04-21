@@ -12,11 +12,12 @@ const StyledAwards = styled.div`
   align-items: center;
   justify-content: space-evenly;
   background: var(--bg);
+  flex-wrap: wrap;
 
   @media (max-width: 900px) {
     padding: 3rem;
-    gap: 1rem;
-    justify-content: space-between;
+    gap: 2rem;
+    justify-content: center;
   }
 `;
 
@@ -25,7 +26,7 @@ const Award = styled.img`
   object-fit: contain;
 
   @media (max-width: 900px) {
-    width: calc(33% - 1rem);
+    width: calc(50% - 1rem);
   }
 `;
 
