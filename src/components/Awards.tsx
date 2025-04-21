@@ -3,6 +3,7 @@ import styled from "styled-components";
 import award01 from "../assets/awards/01.png";
 import award02 from "../assets/awards/02.png";
 import award03 from "../assets/awards/03.png";
+import award04 from "../assets/awards/04.png";
 
 const StyledAwards = styled.div`
   width: 100%;
@@ -34,6 +35,7 @@ const Awards = () => {
       <Award src={award01} alt="award" />
       <Award src={award02} alt="award" />
       <Award src={award03} alt="award" />
+      <Award src={award04} alt="award" />
     </StyledAwards>
   );
 };
