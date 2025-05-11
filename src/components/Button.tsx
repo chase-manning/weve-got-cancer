@@ -34,9 +34,10 @@ interface Props {
   newTab?: boolean;
   children: React.ReactNode;
   onClick?: () => void;
+  id?: string;
 }
 
-const Button = ({ primary, link, children, newTab, onClick }: Props) => {
+const Button = ({ primary, link, children, newTab, onClick, id }: Props) => {
   return (
     <StyledButton
       primary={primary}
@@ -45,6 +46,7 @@ const Button = ({ primary, link, children, newTab, onClick }: Props) => {
       onClick={() => {
         if (onClick) onClick();
       }}
+      id={id}
     >
       {children}
     </StyledButton>
