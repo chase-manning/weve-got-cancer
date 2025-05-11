@@ -116,12 +116,12 @@ const Hero = () => {
       <Section>
         <TextArea>
           <Author>Kushla Rolls</Author>
-          <Header>
+          <Header id="hero-header">
             We've Got Cancer:
             <br />
             I'll Start at the Beginning
           </Header>
-          <SubHeader>
+          <SubHeader id="hero-subheader">
             “This started as a diary, which then became my saviour, which in
             turn has become a book. I wrote it, in the end, for you.”
           </SubHeader>
@@ -132,6 +132,7 @@ const Hero = () => {
               link={AMAZON_LINK}
               newTab
               onClick={() => gtag_report_conversion()}
+              id="hero-button"
             >
               Buy on Amazon
             </Button>
@@ -139,7 +140,7 @@ const Hero = () => {
         </TextArea>
       </Section>
       <Section>
-        <Image src="/hero-01.png" alt="We've Got Cancer Book" />
+        <Image id="hero-image" src="/hero-01.png" alt="We've Got Cancer Book" />
       </Section>
     </StyledHero>
   );
