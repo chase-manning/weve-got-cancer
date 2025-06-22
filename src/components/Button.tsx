@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-const StyledButton = styled.a<{ primary?: boolean }>`
+const StyledButton = styled.a<{ $primary?: boolean }>`
   height: 6.1rem;
   padding: 0 3rem;
   border: none;
   background: ${(props) =>
-    props.primary ? "var(--primary)" : "var(--secondary)"};
+    props.$primary ? "var(--primary)" : "var(--secondary)"};
   color: var(--bg);
   font-size: 2.4rem;
   cursor: pointer;
@@ -40,7 +40,7 @@ interface Props {
 const Button = ({ primary, link, children, newTab, onClick, id }: Props) => {
   return (
     <StyledButton
-      primary={primary}
+      $primary={primary}
       href={link}
       target={newTab ? "_blank" : "_self"}
       onClick={() => {
