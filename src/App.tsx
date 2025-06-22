@@ -12,6 +12,7 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
 const App = () => {
   return (
     <StyledApp>
