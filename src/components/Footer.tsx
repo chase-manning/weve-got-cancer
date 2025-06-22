@@ -127,7 +127,7 @@ const Footer = () => {
           <FooterHeader>Links</FooterHeader>
           <FooterLink href="#">Home</FooterLink>
           <FooterLink href={AMAZON_LINK} target="_blank">
-            Buy on Amazon
+            View Now
           </FooterLink>
           <FooterLink href="/#about">About the book</FooterLink>
           <FooterLink href="/#author">About the author</FooterLink>

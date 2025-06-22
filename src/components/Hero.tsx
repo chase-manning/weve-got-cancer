@@ -134,7 +134,7 @@ const Hero = () => {
               onClick={() => gtag_report_conversion()}
               id="hero-button"
             >
-              Buy on Amazon
+              View Now
             </Button>
           </ButtonContainer>
         </TextArea>
