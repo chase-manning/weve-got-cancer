@@ -2,7 +2,6 @@ import styled from "styled-components";
 import bg from "../assets/hero-bg.png";
 import Button from "./Button";
 import { AMAZON_LINK } from "../app/constants";
-import gtag_report_conversion from "../app/report-conversion";
 
 const StyledHero = styled.div`
   width: 100%;
@@ -67,14 +66,14 @@ const Header = styled.h1`
 `;
 
 const SubHeader = styled.h3`
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: var(--primary);
   font-family: "PT Serif", serif;
   font-weight: normal;
   max-width: 65rem;
 
   @media (max-width: 900px) {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 `;
@@ -122,18 +121,13 @@ const Hero = () => {
             I'll Start at the Beginning
           </Header>
           <SubHeader id="hero-subheader">
-            “This started as a diary, which then became my saviour, which in
-            turn has become a book. I wrote it, in the end, for you.”
+            Our Cancer journey told from beginning to end .. diagnosis,
+            treatments, side effects, a few twists and turns, and some tips
+            along the way - to assist as you navigate this unknown territory
           </SubHeader>
           <ButtonContainer>
             <Button link="/#about">Learn more</Button>
-            <Button
-              primary
-              link={AMAZON_LINK}
-              newTab
-              onClick={() => gtag_report_conversion()}
-              id="hero-button"
-            >
+            <Button primary link={AMAZON_LINK} newTab id="hero-button">
               View Now
             </Button>
           </ButtonContainer>

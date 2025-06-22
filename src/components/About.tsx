@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Button from "./Button";
 import { AMAZON_LINK } from "../app/constants";
-import gtag_report_conversion from "../app/report-conversion";
 
 const StyledAbout = styled.div`
   width: 100%;
@@ -127,12 +126,7 @@ const About = () => {
           <Quote>(Te reo Maori, Aotearoa, New Zealand)</Quote>
         </QuoteContainer>
         <ButtonContainer>
-          <Button
-            link={AMAZON_LINK}
-            primary
-            newTab
-            onClick={() => gtag_report_conversion()}
-          >
+          <Button link={AMAZON_LINK} primary newTab>
             Buy now on Amazon
           </Button>
         </ButtonContainer>
